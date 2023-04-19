@@ -36,7 +36,6 @@ header h1 {
 }
 
 #nav ul li {
-    border: 1px solid blue;
     padding: 1.5em 1em;
     margin-bottom: 0.5em;
     text-align: center;
@@ -82,6 +81,11 @@ header h1 {
 
 .container a {
     text-decoration: none;
+    border: 1px solid whitesmoke;
+    color: gray;
+    background-color: rgb(83, 28, 235);
+    padding: 0.8em;
+    border-radius: 5px;
 }
 
 footer {
