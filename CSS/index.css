@@ -1,0 +1,84 @@
+body, figure, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #222222e5;
+    color: white;
+    padding: 5px;
+    font-family: 'Lobster Two', cursive;
+    position: sticky;
+}
+
+header h1 {
+    margin-left: 4.75em;
+}
+
+#nav {
+    position: relative;
+    float: left;
+    width: 11.25em;
+    height: 100vh;
+    background-color:#222222e5;
+    margin-left: -3em;
+    margin-right: 25px;
+}
+
+#nav ul {
+    list-style-type: none;
+}
+
+#nav ul li {
+    border: 1px solid blue;
+    padding: 1.5em 1em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+
+#nav ul a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(186, 186, 186, 0.96);
+    font-size: large;
+    font-family: 'Saira Extra Condensed', sans-serif;    
+}
+
+
+#nav ul li:hover {
+    background-color: rgba(109, 109, 109, 0.95) ;
+}
+
+.accueil {
+    background-image: url(/img/contexte-programmation-personne-travaillant-codes-ordinateur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.accueil h1 {
+    position: absolute;
+    top: 32%;
+    left: 26%; 
+    font-size: 2.5em;
+    font-family: 'Lobster Two', cursive;
+    font-size: 4rem;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+    color: #ed5b939a;
+}
+
+footer {
+    background-color: #222222e5;
+    color: white;
+    text-align: end;
+}
