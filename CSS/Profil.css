@@ -1,95 +1,111 @@
-body, figure, h1, h2, h3, p {
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+/* Structure principale */ 
+* {
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
+/* Barre de navigation */
 
-header {
-    background-color: #222222e5;
-    color: white;
-    padding: 5px;
-    font-family: cursive;
-    position: sticky;
-}
-
-header h1 {
-    margin-left: 4.75em;
-}
-
-#nav {
-    position: relative;
-    float: left;
-    width: 11.25em;
+.navbar {
+    text-transform: capitalize;
+    font-family:'Roboto';
+    background-color: rgb(64, 71, 79);
+    position: fixed;
+    width: 12%;
     height: 100vh;
-    background-color:#222222e5;
-    margin-left: -3em;
-    margin-right: 25px;
 }
 
-#nav ul {
-    list-style-type: none;
-}
-
-#nav ul li {
-    padding: 1.5em 1em;
-    margin-bottom: 0.5em;
-    text-align: center;
-}
-
-
-#nav ul a {
-    position: relative;
+.navbar a { 
     text-decoration: none;
-    color: rgba(186, 186, 186, 0.96);
-    font-size: large;
-    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 37.5px;
+    position: relative;
+    left: -.75em;
+    top: 3.2em;
+    margin-bottom: 0.25em;
+    width: 199px;
 }
 
-#nav ul li:hover {
-    background-color: rgba(109, 109, 109, 0.95) ;
+.navbar a:hover { 
+    border-right: 6px solid orange; 
+    background-color:  rgb(46, 49, 53);
 }
 
-.accueil {
-    background-image: url(/img/contexte-programmation-personne-travaillant-codes-ordinateur.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
+.navbar a:active { 
+    background-color: rgb(252, 244, 233);
+    border-right: 6px solid orange;
+    color:  rgb(64, 71, 79);
+}
+
+/* Contenu principal*/
+
+.content {
+    margin-left: 12%;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family:'Roboto';
+    background-color: rgb(64, 71, 79); 
     color: white;
+    width: 100%;
+    height: 60px;
+    padding: 10px 0 0 35px;
+    position: fixed;
+}
+
+section {
+    background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+    height: 100vh;
+    margin-top: 60px;
+    display: flex;
+    font-family:'Roboto';
+}
+
+section div #fb {
+    margin-top: 1em;
+}
+
+section div {
+    width: 50%;
+    padding: 45px;
+    margin-left: 1.5em;    
+}
+
+section div h1 {
     text-align: center;
+    margin: 0.5em auto;
+    font-size: 35px;
 }
 
-.accueil h1 {
-    font-size: 2.5em;
+section div p {
+    margin-top: 55px;
 }
 
-.f-d {
-    border: 2px solid white;
-    width: 45%;
-    margin: auto;
-    padding: 2.5px;
-    background-color:  #222222e5;
+section img {
+    width: 360px;
+    height: 420px;
+    border-radius: 20px;
+    position: relative;
+    top: 16%;
+    left: 12%;
 }
 
-.formation ul {
-    list-style-type: none ;
-}
 
-.competences ul {
-    list-style-type: none ;
-}
-
-.projets ul {
-    list-style-type: none ;
-}
 footer {
-    background-color: #222222e5;
+    padding: 1px;
+    margin-top: auto;
+    text-align: center;
+    background-color: rgb(64, 71, 79);
     color: white;
-    text-align: end;
 }
+
 

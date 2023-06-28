@@ -3,39 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initiale-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="./CSS/Bts.css">
 </head>
 
 <body>
-    <header>
-       <h1>BTS SIO</h1>
-    </header>
+    <nav class="navbar">
+        <a href="./index.html">Accueil</a>
+        <a href="./Profil.html">Profil</a>
+        <a href="./Bts.html">BTS SIO</a>
+        <a href="./Ecole.html">Ecole</a>
+        <a href="./projet.html">Projets</a>
+        <a href="./VeilleTec.html">Veille technologique</a>
+    </nav>
+    
+    <main class="content">
+        <header>
+        <h1 class="title">BTS SIO</h1>
+        </header>
 
-    <section id="nav">
-        <nav>
-            <ul>
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./Profil.html">Profil</a></li>
-                <li><a href="./Bts.html">BTS SIO</a></li>
-                <li><a href="./Ecole.html">Ecole</a></li>
-                <li><a href="./VeilleTec.html">Veille technologique</a></li>
-            </ul>
-        </nav>
-    </section>
-
-    <div class="accueil">
-        <br>
-        <div class="container">
-            <h1>BTS SIO</h1>
-            <hr>
-            <h2>Présentation du BTS</h2>
-            <hr><br>
-            <p>Le BTS SIO - Brevet du Technicien Supérieur Services Informatiques aux Organisations - se prépare sur une période de deux ans et s'adresse aux personnes qui souhaitent devenir développeur 
-                ou s'orienter dans l'administration des systèmes et réseaux. Pour ma part, j'ai choisi de faire un BTS SIO pour m'orienter dans l'option SLAM.</p><br>
-            <section class="SISR">
-                <h2>OPTION SISR</h2>
-                <p>Débouchés</p>
+        <div class="presentation">
+            <div class="context">
+                <h1>BTS SIO</h1>
+                <hr>
+                <h2 class="otitles">Présentation du BTS</h2>
+                <hr>
+                <p>Le BTS SIO - Brevet du Technicien Supérieur Services Informatiques aux Organisations - se prépare sur une période de deux ans et s'adresse aux personnes qui souhaitent devenir développeur 
+                    ou s'orienter dans l'administration des systèmes et réseaux. Pour ma part, j'ai choisi de faire un BTS SIO pour m'orienter dans l'option SLAM.</p>
+            </div>
+            <div class="contenu"> 
+            <div class="sisr">
+                <h2 class="otitles">OPTION SISR</h2>
+                <p>Débouchés :</p>
                 <ul>
                     <li>Technicien de production</li>
                     <li>Technicien d'infrastructure</li>
@@ -46,11 +46,10 @@
                     <li>Pilote d'exploitation</li>
                     <li>Informaticien support et déploiement</li>
                 </ul>
-
-            </section>
-            <section class="SLAM">
-                <h2>OPTION SLAM</h2>
-                <p>Débouchés</p>
+            </div>
+            <div class="slam">
+                <h2 class="otitles">OPTION SLAM</h2>
+                <p>Débouchés :</p>
                 <ul>
                     <li>Développeur d'applications informatiques</li>
                     <li>Développeur informatique</li>
@@ -63,13 +62,19 @@
                     <li>Responsable des services applicatifs</li>
                     <li>Technicien d'études informatiques</li>
                 </ul>
-            </section>
+            </div>
+            </div>
+            <div class="cyber">
+                <h2 class="otitles">Cybersécurité</h2>
+                <p>Cette année le référentiel a changé pour répondre au besoin actuel du domaine informatique. La sécurité des données professionnelles et personnelles sont un enjeu important pour chaque entreprise. Au vu de l'augmentation des vols de données et de l'évolution des techniques d'arnaques, les entreprises souhaitent développer la cybersécurité. C'est à cet effet, que le BTS SIO s'est réformé et est maintenant plus axé sur la sécurité. Les deux sections apprennent donc à sécuriser leurs codes pour les SLAM et l'Infrastructure réseau pour les SISR. </p>
+            </div>
         </div>
-    </div>
 
-    <footer>
-        <p>© 2023 Mon Portfolio. Tous droits réservés.</p>
-    </footer>
+        <footer>
+            <p>© 2023 Mon Portfolio. Tous droits réservés.</p>
+        </footer>
+
+    </main>
 </body>
 
 </html>
