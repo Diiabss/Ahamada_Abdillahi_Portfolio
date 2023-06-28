@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+/* Structure principale */ 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Barre de navigation */
+
+.navbar {
+    text-transform: capitalize;
+    font-family:'Roboto';
+    background-color: rgb(64, 71, 79);
+    position: fixed;
+    width: 12%;
+    height: 100vh;
+}
+
+.navbar a { 
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 37.5px;
+    position: relative;
+    left: -.75em;
+    top: 3.2em;
+    margin-bottom: 0.25em;
+    width: 199px;
+}
+
+.navbar a:hover { 
+    border-right: 6px solid orange; 
+    background-color:  rgb(46, 49, 53);
+}
+
+.navbar a:active { 
+    background-color: rgb(252, 244, 233);
+    border-right: 6px solid orange;
+    color:  rgb(64, 71, 79);
+}
+
+/* Contenu principal*/
+
+.content {
+    margin-left: 12%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family:'Roboto';
+    background-color: rgb(64, 71, 79); 
+    color: white;
+    width: 100%;
+    height: 60px;
+    padding: 10px 0 0 35px;
+    position: fixed;
+}
+
+.accueil {
+    margin-top: 145px;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+}
+
+.accueil h1 {
+    font-size: 2.5em;
+}
+
+.container {
+    border: 1px solid white;
+    width: 35%;
+    margin: 5em auto;
+    padding: 30px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid white;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.container h1, .container h2 {
+    margin: 15px auto;
+}
+
+.container a {
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    background-color: orange;
+    padding: 0.8em;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 100px;   
+    color: white;
+}
+
+footer {
+    padding: 1px;
+    margin-top: auto;
+    text-align: center;
+    background-color: rgb(64, 71, 79);
+    color: white;
+}
