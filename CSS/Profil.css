@@ -62,7 +62,7 @@
     position: fixed;
 }
 
-section {
+.moi {
     background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
     height: 100vh;
     margin-top: 60px;
@@ -70,27 +70,27 @@ section {
     font-family:'Roboto';
 }
 
-section div #fb {
+.moi div #fb {
     margin-top: 1em;
 }
 
-section div {
+.moi div {
     width: 50%;
     padding: 45px;
     margin-left: 1.5em;    
 }
 
-section div h1 {
+.moi div h1 {
     text-align: center;
     margin: 0.5em auto;
     font-size: 35px;
 }
 
-section div p {
+.moi div p {
     margin-top: 55px;
 }
 
-section img {
+.moi img {
     width: 360px;
     height: 420px;
     border-radius: 20px;
@@ -99,6 +99,24 @@ section img {
     left: 12%;
 }
 
+.infos {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 65px;
+    justify-content: center;
+    margin-right: 3.5em;
+}
+
+.infos a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid whitesmoke;
+    background-color: orange;
+    padding: 0.8em;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
 
 footer {
     padding: 1px;
