@@ -80,12 +80,23 @@
     width: 85%;
     margin: 5em auto;
     padding: 30px;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid white;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.container a {
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    background-color: rgb(255, 128, 0);
+    padding: 0.5em;
+    border-radius: 5px;
+    margin: auto;
+    width: 100px;   
+    color: white;
 }
 
 .container h1, .container h2 {
