@@ -86,6 +86,7 @@
     background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid white;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+    overflow: auto;
 }
 
 .container a {
@@ -94,7 +95,7 @@
     background-color: rgb(255, 128, 0);
     padding: 0.5em;
     border-radius: 5px;
-    margin: auto;
+    margin: 15px auto;
     width: 100px;   
     color: white;
 }
@@ -124,3 +125,40 @@ footer {
     background-color: rgb(64, 71, 79);
     color: white;
 }
+
+/* projet.css */
+
+/* Styles généraux */
+/* ... Vos styles actuels ... */
+
+/* Media queries pour les appareils plus petits (tablettes et mobiles) */
+@media screen and (max-width: 768px) {
+    /* Ajustements pour la disposition des images */
+    .gallery img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    /* Ajustements pour le texte des titres */
+    h2 {
+      font-size: 20px;
+    }
+  
+    /* Ajustements pour la largeur du lien */
+    .accueil .container a {
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Media queries pour les appareils encore plus petits (mobiles) */
+  @media screen and (max-width: 480px) {
+    /* Ajustements supplémentaires si nécessaire */
+    h2 {
+      font-size: 18px;
+    }
+  }
+  

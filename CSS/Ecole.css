@@ -81,7 +81,7 @@
     width: 40%;
     margin: 3em auto;
     padding: 25px;
-    height: 85%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.75);
@@ -125,3 +125,38 @@ footer {
     background-color: rgb(64, 71, 79);
     color: white;
 }
+
+/* Ecole.css */
+
+/* Styles généraux */
+/* ... Vos styles actuels ... */
+
+/* Media queries pour les appareils plus petits (tablettes et mobiles) */
+@media screen and (max-width: 768px) {
+    /* Ajustements pour la disposition de la section */
+    .container {
+      padding: 20px;
+    }
+  
+    /* Ajustements pour la taille du texte des titres */
+    h2 {
+      font-size: 20px;
+    }
+  
+    /* Ajustements pour la largeur des liens */
+    section a {
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Media queries pour les appareils encore plus petits (mobiles) */
+  @media screen and (max-width: 480px) {
+    /* Ajustements supplémentaires si nécessaire */
+    h2 {
+      font-size: 18px;
+    }
+  }
+  

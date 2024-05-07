@@ -13,8 +13,11 @@
     font-family:'Roboto';
     background-color: rgb(64, 71, 79);
     position: fixed;
-    width: 12%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10.5%;
+    height: 100%;
 }
 
 .navbar a { 
@@ -23,12 +26,18 @@
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 37.5px;
-    position: relative;
-    left: -.75em;
-    top: 3.2em;
-    margin-bottom: 0.25em;
-    width: 199px;
+    padding: 1em;
+    width: 100%;
+}
+
+.navbar a:first-child {
+    margin-top: 2em;
+}
+
+nav a.clicked {
+    background-color: rgb(252, 244, 233);
+    border-right: 6px solid orange;
+    color:  rgb(64, 71, 79);
 }
 
 .navbar a:hover { 
@@ -36,19 +45,22 @@
     background-color:  rgb(46, 49, 53);
 }
 
+/*
 .navbar a:active { 
     background-color: rgb(252, 244, 233);
     border-right: 6px solid orange;
     color:  rgb(64, 71, 79);
 }
+*/
+
 
 /* Contenu principal*/
 
 .content {
-    margin-left: 12%;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .title {
@@ -58,7 +70,7 @@
     color: white;
     width: 100%;
     height: 60px;
-    padding: 10px 0 0 35px;
+    padding: 10px 0 0 6.5em;
     position: fixed;
 }
 
@@ -96,11 +108,13 @@ section div:last-of-type span {
 }
 
 footer {
-    padding: 1px;
-    margin-top: auto;
-    text-align: center;
-    background-color: rgb(64, 71, 79);
-    color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 1px;
+  text-align: center;
+  background-color: rgb(64, 71, 79);
+  color: white;
+  width: 100%;
 }
 
 /* Outil pour l'effet typing*/
@@ -125,6 +139,54 @@ footer {
     30% {width:305px;}
     80% {opacity:1;}
     100% {opacity:0;width:305px;}
+}
+
+/* Media queries pour rendre responsive, déjà effacer la barre de navigation en quelque chose de déroulant */
+
+/* index.css */
+
+/* Styles généraux */
+/* ... Vos styles actuels ... */
+
+/* ... Tes styles actuels ... */
+
+/* Media queries pour les tailles d'écran plus petites */
+@media screen and (max-width: 768px) {
+  /* Styles pour les écrans de largeur maximale de 768px */
+
+  /* Adaptez les styles pour le contenu principal */
+  .content {
+    padding: 20px;
+  }
+
+  /* Adaptez les styles pour le titre */
+  .title {
+    font-size: 24px;
+  }
+}
+
+/* Media queries pour les tailles d'écran encore plus petites (mobiles) */
+@media screen and (max-width: 480px) {
+  /* Styles pour les écrans de largeur maximale de 480px */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Adaptez davantage les styles pour le contenu principal */
+  .content {
+    padding: 10px;
+  }
+
+  /* Adaptez davantage les styles pour le titre */
+  .title {
+    font-size: 20px;
+  }
 }
 
   

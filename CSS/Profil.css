@@ -126,4 +126,48 @@ footer {
     color: white;
 }
 
+/* Profil.css */
 
+/* Styles généraux */
+/* ... Vos styles actuels ... */
+
+/* Media queries pour les appareils plus petits (tablette et mobile) */
+@media screen and (max-width: 768px) {
+    /* Ajustements pour la disposition de la section "moi" */
+    .moi {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* Ajustements pour l'image de profil */
+    .moi img {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    /* Ajustements pour le texte de présentation */
+    .moi div {
+      padding: 20px;
+    }
+  
+    /* Ajustements pour la taille du texte */
+    .presentation {
+      font-size: 24px;
+    }
+  
+    /* Ajustements pour les liens du bas */
+    .infos {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Media queries pour les appareils encore plus petits (mobile) */
+  @media screen and (max-width: 480px) {
+    /* Ajustements supplémentaires si nécessaire */
+    .presentation {
+      font-size: 20px;
+    }
+  }
+  

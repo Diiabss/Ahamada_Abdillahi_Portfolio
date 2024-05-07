@@ -162,3 +162,44 @@ footer {
     background-color: rgb(64, 71, 79);
     color: white;
 }
+
+/* Bts.css */
+
+/* Styles généraux */
+/* ... Vos styles actuels ... */
+
+/* Media queries pour les appareils plus petits (tablettes et mobiles) */
+@media screen and (max-width: 768px) {
+    /* Ajustements pour la disposition de la présentation */
+    .presentation {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* Ajustements pour la taille du texte des titres */
+    .otitles {
+      font-size: 20px;
+    }
+  
+    /* Ajustements pour la disposition des éléments de la présentation */
+    .context,
+    .sisr,
+    .slam,
+    .cyber {
+      margin-bottom: 20px;
+    }
+  
+    /* Ajustements pour les listes */
+    ul {
+      padding-left: 20px;
+    }
+  }
+  
+  /* Media queries pour les appareils encore plus petits (mobiles) */
+  @media screen and (max-width: 480px) {
+    /* Ajustements supplémentaires si nécessaire */
+    .otitles {
+      font-size: 18px;
+    }
+  }
+  
