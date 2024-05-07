@@ -87,7 +87,7 @@
     background-color: rgba(0, 0, 0, 0.75);
     border: 1px solid white;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .container h1, .container h2 {
